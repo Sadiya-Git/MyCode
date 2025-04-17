@@ -1,0 +1,28 @@
+# Set the working directory
+WORKDIR /usr/share/nginx/html
+
+# Copy the build artifacts from your local machine to the image
+COPY build/ .
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx when the container starts
+CMD ["nginx", "-g", "daemon off;"]
+
+ENV PATH /app/node_modules/.bin:$PATH
+
+# install app dependencies
+COPY package.json ./
+RUN npm install --silent
+RUN npm install react-scripts@4.0.0 -g --silent
+
+# add app
+COPY . ./
+
+# Expose port
+EXPOSE 3000
+
+# start app
+CMD ["npm", "start"]
+>>>>>>> 08aaca1392b125c7fa6cb15dd3e3d7bd7903c24c

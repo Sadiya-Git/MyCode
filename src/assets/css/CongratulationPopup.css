@@ -1,0 +1,129 @@
+.congratulation-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .congratulation-content {
+    text-align: center;
+  }
+  
+  .confetti {
+    width: 20px;
+    height: 20px;
+    background-color: #f39c12;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    display: inline-block;
+    margin: 0 5px;
+    animation: confetti-fall 1s ease-in-out infinite;
+  
+    @keyframes confetti-fall {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+  }
+  
+  .StripeElement {
+    height: 40px;
+    padding: 10px 12px;
+    width: 100%;
+    color: #32325d;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+  }
+  
+  .StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+  }
+  
+  .StripeElement--invalid {
+    border-color: #fa755a;
+  }
+  
+  .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+  }
+  @media only screen and (max-width: 375px) {
+    .filterWrapper{
+      height: auto;
+      border-radius:10px;
+      z-index: 2;
+     
+    position: relative !important;
+  }
+}
+.accordianContainer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.accordianItem{
+ width: 300px;
+}
+.filterButtonContainer{
+  display: flex;
+  justify-content: end;
+}
+.container-score{
+  height: 300px !important;
+}
+.search-container{
+  width:100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+.search-container-item{
+  width: 300px;
+}
+@media only screen and (max-width: 1200px) {
+  .filterWrapper{
+}
+}
+  .filterWrapper{
+    height: auto;
+    border-radius:10px;
+  }
+
+  .filterWrapper{
+    height: auto;
+    border-radius:10px;
+  }
+  
+
+  .filter-button{
+    button{
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .divClassNameForModelPlans{
+    max-width: 900px !important;
+  }
+  .divClassNameForDeleteCertificate{
+    max-width: 600px !important;
+  }
+  .modelBodyForDeleteModule{
+    margin-bottom: 230px;
+  }
